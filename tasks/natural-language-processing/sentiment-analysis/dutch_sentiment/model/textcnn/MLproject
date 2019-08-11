@@ -1,0 +1,16 @@
+name: Sentiment Analysis Dutch
+
+conda_env: my_env.yaml
+# Can have a docker_env instead of a conda_env, e.g.
+# docker_env:
+#    image:  mlflow-docker-example
+
+entry_points:
+  main:
+    parameters:
+      
+    command: "python train.py"
+  validate:
+    parameters:
+      
+    command: "python evaluation.py"
